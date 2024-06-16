@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    background: #eff0f4;
+    overflow: hidden;
+}
+.box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    width: 470px;
+}
+.box .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    padding: 60px 20px;
+    box-shadow:
+inset 20px 20px 20px rgba(0,0,0,0.05),
+        25px 35px 20px rgba(0,0,0,0.05),
+25px 30px 30px rgba(0,0,0,0.05),
+inset -20px -20px 25px rgba(255,255,255,0.9);
+}
+.box .content{
+    border-radius: 52% 48% 33% 67%/38% 45% 55% 62%;
+    transition: 0.5s;
+}
+.box .content:hover{
+    border-radius: 50%;
+}
+.box .content::before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 85px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background: #fff;
+    opacity: 0.9;
+}
+.box .content::after{
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 110px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background: #ffff;
+    opacity: 0.9;
+}
+.box .content div{
+    position: relative;
+    width: 255px;
+    border-radius: 25px;
+    box-shadow:
+inset 2px 5px 10px rgba(0,0,0,0.1),
+inset -2px -5px 10px rgba(255,255,255,1),
+15px 15px 10px rgba(0,0,0,0.05),
+15px 10px 15px rgba(0,0,0,0.025);
+}
+.box .content div::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    height: 8px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 5px;
+}
+.box .content input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+.box .content input[type="submit"]{
+    color: #131212;
+    cursor: pointer;
+}
+.box .content div:last-child
+{
+    width: 120px;
+    background: #ff0f5b;
+    box-shadow:
+inset 2px 5px 10px rgba(0,0,0,0.1),
+        15px 15px 10px rgba(0,0,0,0.05),
+15px 10px 15px rgba(0,0,0,0.025);
+    transition: 0.5s;
+}
+.box .content div:last-child:hover{
+    width: 150px;
+}

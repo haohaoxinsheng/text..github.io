@@ -1,0 +1,26 @@
+.register {
+    bottom: 45%;
+    right: 34%;
+    width: 100px;
+    height: 100px;
+    border-radius: 49% 51% 52% 48% / 63% 59% 41% 37%;
+    background: #ff6201;
+    box-shadow:
+            inset 20px 10px 10px rgba(1, 180, 255, 0.05),
+            15px 25px 10px rgba(1, 180, 255, 0.1),
+            15px 20px 50px rgba(1, 180, 255, 0.1),
+            inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+}
+.register::before {
+    left: 40px;
+    width: 40px;
+    height: 40px;
+}
+.title{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    color: #131212;
+    font-size:2rem;
+}

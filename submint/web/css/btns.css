@@ -1,0 +1,39 @@
+.btns{
+    position: absolute;
+    right: 31%;
+    bottom: 23%;
+    width: 150px;
+    height: 150px;
+    background: #ff0fc7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    box-shadow: inset 10px 10px 10px rgba(190,
+    1, 254, 0.05),
+            15px 25px 10px rgba(190, 1, 254, 0.1),
+    15px 20px 20px rgba(190, 1, 254, 0.1),
+            inset -10px -10px 15px rgba(255, 255,
+            255, 0.5);
+    border-radius: 45% 56% 65% 35% / 57% 58% 42% 43%;
+}
+.btns::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.45;
+}
+.btns{
+    transition: 0.25s;
+}
+.btns:hover {
+    border-radius: 50%;
+}
